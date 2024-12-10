@@ -1,0 +1,102 @@
+<!-- Write HTML CSS Script using Bootstrap to set 3 images of some product horizontally 
+and show their price,features and available quantity in stock just below in it with border containing images and description when user tries to shrink width of the page all 3 images should be set vertically -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishan's Mobile Store</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1
+      align="center"
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif, Helvetica, sans-serif;
+      "
+    >
+      Mobile Store
+    </h1>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="s24.jpeg" class="img-thumbnail" />
+        <br />
+        <table class="table table-bordered">
+          <tr class="table-info">
+            <th>Phone Model</th>
+            <th>Price</th>
+            <th>Key Features</th>
+            <th>Available Stock</th>
+          </tr>
+          <tr class="table-secondary">
+            <td>Samsung Galaxy S24</td>
+            <td>$899</td>
+            <td>
+              6.1-inch OLED display, Snapdragon 8 Gen 3, 50 MP camera, 8 GB RAM
+            </td>
+            <td>120 units</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <img src="ip16pr.jpeg" class="img-thumbnail" />
+        <table class="table table-bordered">
+          <tr class="table-info">
+            <th>Phone Model</th>
+            <th>Price</th>
+            <th>Key Features</th>
+            <th>Available Stock</th>
+          </tr>
+          <tr class="table-secondary">
+            <td>Apple iPhone 16 Pro</td>
+            <td>$1,399</td>
+            <td>
+              6.7-inch OLED display, A18 chip, 48 MP camera, 6 GB RAM, ProMotion
+            </td>
+            <td>75 units</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <img src="minote13pr.jpeg" class="img-thumbnail" />
+        <table class="table table-bordered">
+          <tr class="table-info">
+            <th>Phone Model</th>
+            <th>Price</th>
+            <th>Key Features</th>
+            <th>Available Stock</th>
+          </tr>
+          <tr class="table-secondary">
+            <td>Xiaomi Mi 13</td>
+            <td>$749</td>
+            <td>
+              6.36-inch AMOLED display, Snapdragon 8 Gen 2, 50 MP camera, 8 GB
+              RAM
+            </td>
+            <td>200 units</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
