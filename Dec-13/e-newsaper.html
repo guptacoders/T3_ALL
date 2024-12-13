@@ -1,0 +1,222 @@
+<!-- Write A Html script using Bootstrap to design a page of e-newspaper having 3 articles by showing titles initially 
+ Script should enable a reader to open a particular article by clciking its title and close it by clicking it again 
+ If reader opens any other articles than previous article should disappear -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      h5::first-letter {
+        color: red;
+      }
+      h5 {
+        color: blue;
+      }
+      h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(243, 56, 9);
+      }
+    </style>
+  </head>
+  <body>
+    <h5 align="center">E-Newspaper</h5>
+    <h1 align="center">Times Of India</h1>
+    <div id="accordion">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header">
+              <a
+                href="#collapseone"
+                class="card-link"
+                data-toggle="collapse"
+               
+                >      Sports</a
+              >
+            </div>
+
+            <div id="collapseone" class="collapse" data-parent="#accordion">
+              <div class="card-copy">
+                <img src="news.jpeg" style="height: 200px; float: left" />
+                <h4>Chennai’s cradle of chess cheers champ</h4>
+                <p>
+                  Velammal Vidyalaya, the force behind Chennai’s chess
+                  revolution, celebrated the win of its alumnus. D Gukesh and R
+                  Praggnanandhaa are the brightest prodigies of the school, and
+                  it offers expert training to hundreds of budding chess
+                  players. Since 2005 , it has produced several GMs, including
+                  Leon Mendonca, K Priyadharshan and B Adhiban. Vaishali R,
+                  sister of Praggu, is a prominent woman GM from the school. “Of
+                  course, they also have a champion like Anand to look up to,” S
+                  Velavan, chess co-coordinator at Velammal, said, adding its
+                  students who play chess have also done well in their studies
+                </p>
+
+                <img src="news2.jpeg" style="height: 200px; float: left" />
+                <h4>
+                  World-class Shekhawati Sports Academy coming up soon in Sikar,
+                  Rajasthan
+                </h4>
+                <p>
+                  Jaipur: In a historic initiative to transform sports in rural
+                  Rajasthan, the Shekhawati Sports Academy (SPA) is being
+                  established on a sprawling 16-acre campus in Ramgarh
+                  Shekhawati, Sikar. This ambitious project, which is under
+                  construction, seeks to provide world-class sports
+                  infrastructure and training, unlocking grassroots talent and
+                  preparing athletes to compete in international tournaments,
+                  including the Olympics. The SPA president Yogendra Rajpuria,
+                  said, "Shekhawati Sports Academy will usher in a new era for
+                  sports in Rajasthan. Our vision, ‘Khelega Shekhawati, Jeetega
+                  Bharat,' reflects our dedication to nurturing young talent,
+                  promoting sports at the grassroots level, and preparing
+                  athletes to bring laurels to India on the global stage."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header">
+              <a href="#collapsetwo" class="card-link" data-toggle="collapse"
+                >Politics</a
+              >
+            </div>
+
+            <div id="collapsetwo" class="collapse" data-parent="#accordion">
+              <div class="card-copy">
+                <img src="news1.jpeg" style="height: 200px; float: left" />
+                <h4>PM: Youth should lead nation in politics</h4>
+                <p>
+                  Gandhinagar: Speaking via teleconferencing at an event of the
+                  Ramakrishna Math in Ahmedabad on Monday, Prime Minister
+                  Narendra Modi said that India is the youngest nation in the
+                  world. Like the youth of India who have taken the lead in
+                  fields like technology, there is a need for them to lead the
+                  country in politics as well. At the event, chief minister
+                  Bhupendra Patel inaugurated a cafeteria, prayer hall and
+                  housing facilities of the Ramkrishna Math. The PM announced
+                  that on Jan 12 next year, celebrated as Youth Day, the Union
+                  govt will organise the ‘Young Leaders Dialogue' in Delhi. He
+                  added that 2,000 selected youth will be invited, while crores
+                  from across the country will join the event online. He added
+                  that the resolution of a developed India from the perspective
+                  of the youth will be discussed, and a roadmap to connect the
+                  youth with politics will be prepared.
+                </p>
+
+                <img src="news3.jpeg" style="height: 200px; float: left" />
+                <h4>
+                  AAP accuses BJP of settling Rohingyas in Delhi; 'baseless
+                  rhetoric', says saffron party
+                </h4>
+                <p>
+                  NEW DELHI: Ahead of the Delhi Assembly polls, the AAP on
+                  Sunday accused the BJP of settling Rohingya refugees in the
+                  city while publicly vilifying them. Reacting to the
+                  allegation, the BJP said the real issue is not the settlement
+                  of legal refugees but the presence of millions of
+                  illegally-residing Rohingya Muslims and Bangladeshis not only
+                  in Delhi but also in other states and accused the Aam Aadmi
+                  Party (AAP) of resorting to "baseless rhetoric". In a
+                  statement, senior AAP leaders, including Chief Minister
+                  Atishi, Rajya Sabha MP Sanjay Singh and former deputy chief
+                  minister Manish Sisodia, pointed to a 2022 post on X by Union
+                  minister Hardeep Singh Puri as evidence of the Bharatiya
+                  Janata Party's (BJP) involvement in housing Rohingya Muslims
+                  in EWS (Economically Weaker Section) flats in Delhi's
+                  Bakkarwala area.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header">
+              <a href="#collapsethree" class="card-link" data-toggle="collapse"
+                >Entertainment</a
+              >
+            </div>
+
+            <div id="collapsethree" class="collapse" data-parent="#accordion">
+              <div class="card-copy">
+                <img src="news4.jpeg" style="height: 200px; float: left" />
+                <h4>
+                  Air India extends wireless inflight entertainment service to
+                  single-aisle fleet
+                </h4>
+                <p>
+                  MUMBAI: Private carrier Air India on Tuesday said it has
+                  extended its wireless inflight entertainment service to its
+                  single-aisle fleet. The service 'Vista Stream' enables the
+                  airline's passengers to stream a wide variety of entertainment
+                  content directly to their personal electronic devices such as
+                  smartphones, tablets and laptops, Air India said. Vista
+                  Stream, which debuted in August this year, has already been
+                  introduced across Air India's wide-body fleet (excluding the
+                  newly inducted Boeing 777 and Airbus A350 aircraft), and it
+                  will now be accessible on both wide-body and narrow-body
+                  aircraft across international and domestic networks, the
+                  airline said. With the roll out, passengers can explore over
+                  1600+ hours of premium curated content, from Bollywood
+                  blockbusters and Hollywood hits to captivating documentaries,
+                  classic tunes, and curated children's programs.
+                </p>
+
+                <img src="news5.jpeg" style="height: 200px; float: left" />
+                <h4>
+                  Indian entertainment-media industry to grow 8.3% CAGR to reach
+                  Rs 3.7 trillion by 2028: PwC report
+                </h4>
+                <p>
+                  NEW DELHI: India's entertainment and media industry is
+                  projected to grow at a combined annual growth rate (CAGR) of
+                  8.3 per cent to hit Rs 365,000 Crore (USD 19.2 billion)
+                  outpacing the global rate of 4.6 per cent, according to PwC
+                  India's report "Global Entertainment and Media Outlook
+                  2024-28: India perspective". Currently, the US leads the
+                  global market by revenue, with China in the 2nd place and
+                  India at the 9th. Manpreet Singh Ahuja, Chief Digital Officer
+                  and TMT Leader at PwC India said India's Entertainment and
+                  Media sector is on the cusp of a major transformation.
+                  According to the multinational consulting services company,
+                  key growth drivers such as digital advertising, OTT platforms,
+                  online gaming, and Generative AI are shaping the future of the
+                  industry. Ahuja said that these rapidly expanding segments are
+                  positioning India as a global leader in innovation and growth.
+                  "Businesses that adapt and innovate in these areas are poised
+                  to seize unparalleled opportunities in this dynamic
+                  landscape," Ahuja added.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
