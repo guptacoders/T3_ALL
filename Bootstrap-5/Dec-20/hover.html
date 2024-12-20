@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+  background-image: url('download.jfif'); /* Background image to show the effect */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3); /* Initial transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  backdrop-filter: blur(10px); /* More intense blur on hover */
+  background: rgba(255, 255, 255, 0.1); /* Add more opacity for the glass effect */
+  transform: translateY(-30px); /* Slight lift effect on hover */
+  transform: translateX(-30py); 
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>Some content inside the card.</p>
+      </div>
+      
+</body>
+</html>
